@@ -2,13 +2,8 @@
 <html>
 <head>
     <title>To-Do App</title>
-    <style>
-        .completed {
-            text-decoration: line-through;
-            color: gray;
-        }
-    </style>
-    <link rel="stylesheet" href="../static/css/style.css">
+
+    <link rel="stylesheet" href="../static/todo/css/style.css">
 </head>
 <body>
 
@@ -17,7 +12,7 @@
 <form method="POST">
     {% csrf_token %}
     <input type="text" name="title" placeholder="Enter task">
-    <button type="submit">Add</button>
+    <button class="bt" type="submit">Add</button>
 </form>
 
 <ul>
@@ -29,9 +24,13 @@
 
             <a href="{% url 'toggle' task.id %}">✔</a>
             <a href="{% url 'delete' task.id %}">❌</a>
+            <a href="{% url 'edit' task.id %}"><button class="bt1">Edit</button></a>
+
         </li>
     {% endfor %}
 </ul>
+</form>
+
 
 </body>
 </html>
