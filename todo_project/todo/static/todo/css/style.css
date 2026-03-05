@@ -22,33 +22,35 @@ input {
 
 .bt{
     padding: 8px 12px;
-    background:linear-gradient(to right, #dde3eb, #df35f9);
+    background:linear-gradient(to right, #dde3eb, #ce7edb);
     border: none;
     cursor: pointer;
     border-radius: 20px;
     font-weight: bold;
+    color: #000000;
     
 }
 
 .bt:hover {
-    background: linear-gradient(to left, #dde3eb, #df35f9)
+    background: linear-gradient(to left, #dde3eb, #c87dd4)
     
 }
 .bt1{
     padding: 1px 3px;
-    background:linear-gradient(to right, #dde3eb, #df35f9);
+    background:linear-gradient(to right, #dde3eb, #a95ab5);
     cursor: pointer;
     border-radius: 20px;
     border: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: smaller;
+    
 
     
     
     
 }
 .bt1:hover{
-    background: linear-gradient(to left, #dde3eb, #df35f9)
+    background: linear-gradient(to left, #dde3eb, #e37ef3)
 }
 
 ul {
@@ -69,7 +71,7 @@ li {
 
 a{
     text-decoration:none;
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
 }
 a:hover{
     color: rgb(0, 255, 0);
